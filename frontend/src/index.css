@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+/*
+ * Grain Analyzer design system.
+ *
+ * All design tokens (color, typography, shadows) are declared here as the
+ * single source of truth and exposed as Tailwind utilities, e.g.:
+ *   --color-primary-600  ->  bg-primary-600 / text-primary-600
+ *   --color-ink-muted    ->  text-ink-muted
+ *   --text-page-title    ->  text-page-title
+ *   --shadow-card        ->  shadow-card
+ */
+
+@theme {
+  /* Typography */
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+
+  --text-page-title: 1.5rem;
+  --text-page-title--line-height: 2rem;
+  --text-section-title: 1.125rem;
+  --text-section-title--line-height: 1.75rem;
+  --text-card-title: 1rem;
+  --text-card-title--line-height: 1.5rem;
+  --text-body: 0.9375rem;
+  --text-body--line-height: 1.5rem;
+  --text-label: 0.875rem;
+  --text-label--line-height: 1.25rem;
+  --text-helper: 0.8125rem;
+  --text-helper--line-height: 1.25rem;
+  --text-meta: 0.75rem;
+  --text-meta--line-height: 1rem;
+
+  /* Primary palette (professional indigo / blue-purple) */
+  --color-primary-50: #f2f3fe;
+  --color-primary-100: #e5e7fd;
+  --color-primary-200: #ccd0fb;
+  --color-primary-300: #adb3f8;
+  --color-primary-400: #8b90f2;
+  --color-primary-500: #6d6feb;
+  --color-primary-600: #5451df;
+  --color-primary-700: #4641c5;
+  --color-primary-800: #3b38a1;
+  --color-primary-900: #34327f;
+  --color-primary-950: #212050;
+
+  /* Surfaces */
+  --color-app: #f4f5f7;
+  --color-surface: #ffffff;
+  --color-field: #ffffff;
+  --color-muted: #edeff2;
+
+  /* Borders */
+  --color-border: #e2e4e9;
+  --color-border-strong: #ccd0d8;
+
+  /* Text */
+  --color-ink: #17191e;
+  --color-ink-secondary: #43474f;
+  --color-ink-muted: #6a707b;
+  --color-ink-disabled: #a2a7b0;
+
+  /* Status */
+  --color-success: #0e7a52;
+  --color-success-soft: #e9f7f0;
+  --color-danger: #d92d20;
+  --color-danger-strong: #b42318;
+  --color-danger-soft: #fef0ef;
+  --color-danger-border: #f3b9b3;
+
+  /* Shadows (subtle only) */
+  --shadow-card:
+    0 1px 2px 0 rgb(23 25 30 / 0.05), 0 1px 3px 0 rgb(23 25 30 / 0.06);
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-app font-sans text-body text-ink antialiased;
+  }
+}
