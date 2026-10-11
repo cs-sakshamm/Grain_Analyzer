@@ -11,9 +11,9 @@ export interface HeaderProps {
 export function Header({ actions }: HeaderProps) {
   return (
     <header className="sticky top-0 z-10 border-b border-border bg-surface">
-      <div className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between gap-4 px-4 sm:px-6">
-        <div className="flex items-center gap-3">
-          <svg aria-hidden="true" viewBox="0 0 32 32" className="h-8 w-8">
+      <div className="mx-auto flex h-12 w-full max-w-5xl items-center justify-between gap-3 px-4 sm:px-6">
+        <div className="flex items-center gap-2.5">
+          <svg aria-hidden="true" viewBox="0 0 32 32" className="h-7 w-7">
             <rect width="32" height="32" rx="8" className="fill-primary-600" />
             <path
               d="M16 5.5c4.6 3.9 4.6 10.6 0 14.5-4.6-3.9-4.6-10.6 0-14.5Z"

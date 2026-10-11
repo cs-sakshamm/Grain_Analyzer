@@ -34,7 +34,7 @@ export function SectionHeader({
       <div>
         <Heading className={HEADING_CLASSES[as]}>{title}</Heading>
         {description && (
-          <p className="mt-1.5 max-w-2xl text-body text-ink-muted">{description}</p>
+          <p className="mt-0.5 max-w-2xl text-body text-ink-muted">{description}</p>
         )}
       </div>
       {actions && <div className="flex items-center gap-3">{actions}</div>}
